@@ -1,0 +1,25 @@
+server:
+  port: "9001"
+  debug: true
+#DATABASE
+db:
+  postgres:
+    name: "discount"
+    host: "127.0.0.1"
+    port: "5432"
+    user: "arv123"
+    password: "asd123ASD"
+    debug: true
+    maxIdleConn: "5"
+    maxOpenConn: "10"
+    migrationsPath: "db/migrations"
+  redis:
+    host: "127.0.0.1"
+    port: "6379"
+    password: ""
+    db: "0"
+    timeout: "30m"
+
+app:
+  log:
+    level: "debug"
